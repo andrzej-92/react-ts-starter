@@ -1,0 +1,44 @@
+{
+  "name": "andrzej-92/react-ts-starter",
+  "version": "0.0.1",
+  "description": "A minimal react starter with scss webpack and type scripts",
+  "main": "src/index.tsx",
+  "scripts": {
+    "clean": "rimraf build/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p --bail --progress",
+    "build:prod": "npm run clean && webpack -p --bail --progress --hide-modules --env production",
+    "start": "webpack-dev-server --progress --open --inline --hot",
+    "typings": "rimraf typings/ && typings install",
+    "postinstall": "npm run typings"
+  },
+  "keywords": [
+    "react",
+    "canvas-image",
+    "image-editor"
+  ],
+  "author": "Andrzej Tracz",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^7.0.13",
+    "autoprefixer": "^6.7.7",
+    "compression-webpack-plugin": "^0.4.0",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
+    "open": "0.0.5",
+    "postcss-loader": "^1.3.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "typings": "^2.1.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4",
+    "yargs": "^7.1.0"
+  }
+}
