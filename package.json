@@ -1,5 +1,5 @@
 {
-  "name": "andrzej-92/react-ts-starter",
+  "name": "react-ts-starter",
   "version": "0.0.1",
   "description": "A minimal react starter with scss webpack and type scripts",
   "main": "src/index.tsx",
